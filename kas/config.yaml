@@ -1,0 +1,29 @@
+header:
+  version: 11
+
+build_system: openembedded
+machine: bb
+distro: bb-distro
+target:
+  - bb-image
+
+repos:
+  bitbake:
+    url: "https://git.openembedded.org/bitbake"
+    branch: "2.10"
+    layers:
+      .: excluded
+
+  openembedded-core:
+    url: "https://git.openembedded.org/openembedded-core"
+    branch: kirkstone
+    layers:
+      meta:
+
+  meta-bb:
+    layers:
+      meta-bb:
+
+local_conf_header:
+  meta-bb: |
+    INHERIT += "rm_work"
