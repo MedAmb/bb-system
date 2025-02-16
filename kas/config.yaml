@@ -3,7 +3,7 @@ header:
 
 build_system: openembedded
 machine: bb
-distro: bb-distro
+distro: bb
 target:
   - bb-image
 
@@ -19,6 +19,12 @@ repos:
     branch: kirkstone
     layers:
       meta:
+
+  meta-openembedded:
+    url: https://github.com/openembedded/meta-openembedded.git
+    branch: kirkstone
+    layers:
+      meta-oe:
 
   meta-bb:
     layers:

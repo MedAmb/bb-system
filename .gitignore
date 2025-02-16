@@ -1,3 +1,5 @@
-bitbake/**
-openembedded-core/**
-build/**
+.vscode/
+bitbake/
+build/
+openembedded-core/
+meta-openembedded/

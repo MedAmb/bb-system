@@ -1,0 +1,11 @@
+[Match]
+Name=eth0
+
+[Network]
+DHCP=yes
+LinkLocalAddressing=ipv4
+
+[DHCP]
+UseMTU=yes
+RouteMetric=10
+ClientIdentifier=mac
